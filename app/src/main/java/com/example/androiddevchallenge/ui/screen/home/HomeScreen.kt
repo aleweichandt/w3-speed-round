@@ -34,7 +34,7 @@ fun HomeScreen() {
 @Composable
 fun HomeScreenBody() {
     Surface {
-        Text(text = stringResource(id = R.string.next))
+        Text(text = stringResource(id = R.string.play))
     }
 }
 

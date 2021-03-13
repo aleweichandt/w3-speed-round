@@ -38,7 +38,7 @@ fun LoginScreenBody(onNext: () -> Unit) {
         Button(
             onClick = onNext
         ) {
-            Text(text = stringResource(id = R.string.next))
+            Text(text = stringResource(id = R.string.play))
         }
     }
 }

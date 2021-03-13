@@ -9,9 +9,40 @@
       or implied. See the License for the specific language governing permissions and limitations under
       the License.
       -->
-    <string name="app_name">AndroidDevChallenge</string>
-    <string name="home_screen_title">Home</string>
-    <string name="details_screen_title">Details</string>
-    <string name="next">Next</string>
-    <string name="back">Back</string>
+    <string name="app_name">My Soothe</string>
+    <!-- Welcome -->
+    <string name="logo">My Soothe</string>
+    <string name="singup">Sign Up</string>
+    <string name="login">Log In</string>
+    <!-- Login -->
+    <string name="email">Email address</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="singup_u"><u>Sign Up</u>u></string>
+    <!-- Home -->
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="play">Play</string>
+    <string name="favorite_collections">Favorite Collections</string>
+    <string name="collections_mantra">Short mantras</string>
+    <string name="collections_nature">Nature meditations</string>
+    <string name="collections_stress">Stress and anxiety</string>
+    <string name="collections_massage">Self-massage</string>
+    <string name="collections_overwhelmed">Overwhelmed</string>
+    <string name="collections_wind_down">Nightly wind down</string>
+    <string name="align_body">Align Your Body</string>
+    <string name="body_inversions">Inversions</string>
+    <string name="body_quick_yoga">Quick yoga</string>
+    <string name="body_stretch">Stretching</string>
+    <string name="body_tabata">Tabata</string>
+    <string name="body_hiit">HIIT</string>
+    <string name="body_natal_yoga">Pre-natal yoga</string>
+    <string name="align_mind">Align Your Mind</string>
+    <string name="mind_meditate">Meditate</string>
+    <string name="mind_kids">With kids</string>
+    <string name="mind_aroma">Aromatherapy</string>
+    <string name="mind_on_the_go">On the go</string>
+    <string name="mind_pets">With pets</string>
+    <string name="mind_stress">High stress</string>
 </resources>
