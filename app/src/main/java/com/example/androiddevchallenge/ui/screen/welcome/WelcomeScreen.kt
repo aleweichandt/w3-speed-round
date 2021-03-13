@@ -84,7 +84,7 @@ fun WelcomeScreenBody(onNext: () -> Unit) {
             )
             Button(
                 modifier = Modifier
-                    .height(72.dp)
+                    .height(80.dp)
                     .fillMaxWidth()
                     .padding(bottom = 8.dp),
                 shape = shapes.medium,
@@ -94,7 +94,7 @@ fun WelcomeScreenBody(onNext: () -> Unit) {
             }
             Button(
                 modifier = Modifier
-                    .height(72.dp)
+                    .height(80.dp)
                     .fillMaxWidth()
                     .padding(bottom = 8.dp),
                 shape = shapes.medium,

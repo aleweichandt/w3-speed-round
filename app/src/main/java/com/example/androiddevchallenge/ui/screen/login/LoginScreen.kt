@@ -85,42 +85,52 @@ fun LoginScreenBody(onNext: () -> Unit) {
                 style = MaterialTheme.typography.h1,
                 textAlign = TextAlign.Center
             )
-            TextField(
+            Box(
                 modifier = Modifier
-                    .height(56.dp)
                     .fillMaxWidth()
-                    .padding(bottom = 8.dp),
-                value = email,
-                onValueChange = setEmail,
-                label = {
-                    Text(
-                        text = stringResource(id = R.string.email),
-                        style = MaterialTheme.typography.body1
-                    )
-                },
-                maxLines = 1,
-                textStyle = MaterialTheme.typography.body1
-            )
-            TextField(
+                    .padding(bottom = 8.dp)
+            ) {
+                TextField(
+                    modifier = Modifier
+                        .height(56.dp)
+                        .fillMaxWidth(),
+                    value = email,
+                    onValueChange = setEmail,
+                    label = {
+                        Text(
+                            text = stringResource(id = R.string.email),
+                            style = MaterialTheme.typography.body1
+                        )
+                    },
+                    maxLines = 1,
+                    textStyle = MaterialTheme.typography.body1
+                )
+            }
+            Box(
                 modifier = Modifier
-                    .height(56.dp)
                     .fillMaxWidth()
-                    .padding(bottom = 8.dp),
-                value = password,
-                onValueChange = setPassword,
-                label = {
-                    Text(
-                        text = stringResource(id = R.string.password),
-                        style = MaterialTheme.typography.body1
-                    )
-                },
-                visualTransformation = PasswordVisualTransformation(),
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                maxLines = 1,
-            )
+                    .padding(bottom = 8.dp)
+            ) {
+                TextField(
+                    modifier = Modifier
+                        .height(56.dp)
+                        .fillMaxWidth(),
+                    value = password,
+                    onValueChange = setPassword,
+                    label = {
+                        Text(
+                            text = stringResource(id = R.string.password),
+                            style = MaterialTheme.typography.body1
+                        )
+                    },
+                    visualTransformation = PasswordVisualTransformation(),
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
+                    maxLines = 1,
+                )
+            }
             Button(
                 modifier = Modifier
-                    .height(72.dp)
+                    .height(88.dp)
                     .fillMaxWidth()
                     .padding(bottom = 16.dp),
                 shape = shapes.medium,
@@ -135,6 +145,7 @@ fun LoginScreenBody(onNext: () -> Unit) {
                     .fillMaxWidth(),
                 text = buildAnnotatedString {
                     append(stringResource(id = R.string.dont_have_account))
+                    append(" ")
                     withStyle(style = SpanStyle(textDecoration = TextDecoration.Underline)) {
                         append(stringResource(id = R.string.singup_u))
                     }
