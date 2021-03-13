@@ -17,8 +17,8 @@
     <!-- Login -->
     <string name="email">Email address</string>
     <string name="password">Password</string>
-    <string name="dont_have_account">Don\'t have an account?</string>
-    <string name="singup_u"><u>Sign Up</u>u></string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="singup_u"><u>Sign Up</u></string>
     <!-- Home -->
     <string name="search">Search</string>
     <string name="home">Home</string>
