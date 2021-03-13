@@ -33,7 +33,7 @@ fun MainStack() {
     val routeLogin = stringResource(id = R.string.route_login)
     val routeHome = stringResource(id = R.string.route_home)
 
-    NavHost(navController, startDestination = routeHome) {
+    NavHost(navController, startDestination = routeWelcome) {
         composable(route = routeWelcome) {
             WelcomeScreen(
                 onNext = { navController.navigate(routeLogin) }
