@@ -13,58 +13,35 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.screen
+package com.example.androiddevchallenge.ui.screen.home
 
-import androidx.compose.material.Icon
-import androidx.compose.material.IconButton
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
-import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.androiddevchallenge.R
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
 @Composable
-fun DetailsScreen(back: () -> Unit) {
-    MyTheme {
-        Scaffold(
-            topBar = { DetailsScreenBar(back) },
-        ) {
-            DetailsScreenBody()
-        }
+fun HomeScreen() {
+    Scaffold() {
+        HomeScreenBody()
     }
 }
 
 @Composable
-fun DetailsScreenBar(back: () -> Unit) {
-    TopAppBar(
-        title = {
-            Text(text = stringResource(id = R.string.details_screen_title))
-        },
-        navigationIcon = {
-            IconButton(onClick = back) {
-                Icon(
-                    painter = painterResource(id = R.drawable.ic_back),
-                    contentDescription = stringResource(id = R.string.back)
-                )
-            }
-        }
-    )
-}
-
-@Composable
-fun DetailsScreenBody() {
+fun HomeScreenBody() {
     Surface {
-        Text(text = stringResource(id = R.string.back))
+        Text(text = stringResource(id = R.string.next))
     }
 }
 
 @Preview
 @Composable
-fun DetailsScreenBodyWithNothing() {
-    DetailsScreenBody()
+fun HomeScreenPreview() {
+    MyTheme {
+        HomeScreen()
+    }
 }

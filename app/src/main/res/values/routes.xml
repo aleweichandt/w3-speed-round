@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="route_welcome" translatable="false">welcome</string>
+    <string name="route_login" translatable="false">login</string>
     <string name="route_home" translatable="false">home</string>
-    <string name="route_details" translatable="false">details</string>
 </resources>

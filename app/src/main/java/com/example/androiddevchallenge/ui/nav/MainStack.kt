@@ -22,25 +22,30 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigate
 import androidx.navigation.compose.rememberNavController
 import com.example.androiddevchallenge.R
-import com.example.androiddevchallenge.ui.screen.DetailsScreen
-import com.example.androiddevchallenge.ui.screen.HomeScreen
+import com.example.androiddevchallenge.ui.screen.home.HomeScreen
+import com.example.androiddevchallenge.ui.screen.login.LoginScreen
+import com.example.androiddevchallenge.ui.screen.login.WelcomeScreen
 
 @Composable
 fun MainStack() {
     val navController = rememberNavController()
+    val routeWelcome = stringResource(id = R.string.route_welcome)
+    val routeLogin = stringResource(id = R.string.route_login)
     val routeHome = stringResource(id = R.string.route_home)
-    val routeDetails = stringResource(id = R.string.route_details)
 
     NavHost(navController, startDestination = routeHome) {
-        composable(route = routeHome) {
-            HomeScreen(
-                onNext = { navController.navigate(routeDetails) }
+        composable(route = routeWelcome) {
+            WelcomeScreen(
+                onNext = { navController.navigate(routeLogin) }
             )
         }
-        composable(route = routeDetails) {
-            DetailsScreen(
-                back = navController::popBackStack
+        composable(route = routeLogin) {
+            LoginScreen(
+                onNext = { navController.navigate(routeHome) }
             )
+        }
+        composable(route = routeHome) {
+            HomeScreen()
         }
     }
 }
