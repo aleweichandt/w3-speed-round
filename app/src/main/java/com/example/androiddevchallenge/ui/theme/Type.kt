@@ -17,27 +17,55 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
+
+val KulimPark = FontFamily(
+    Font(R.font.kulim_park_regular),
+    Font(R.font.kulim_park_light, FontWeight.Light),
+)
+val Lato = FontFamily(
+    Font(R.font.lato_regular),
+    Font(R.font.lato_bold, FontWeight.Bold),
+)
 
 // Set of Material typography styles to start with
 val typography = Typography(
+    h1 = TextStyle(
+        fontFamily = KulimPark,
+        fontWeight = FontWeight.Light,
+        fontSize = 28.sp,
+        letterSpacing = 1.15.sp
+    ),
+    h2 = TextStyle(
+        fontFamily = KulimPark,
+        fontSize = 15.sp,
+        letterSpacing = 1.15.sp,
+        fontFeatureSettings = "smcp"
+    ),
+    h3 = TextStyle(
+        fontFamily = Lato,
+        fontWeight = FontWeight.Bold,
+        fontSize = 14.sp,
+    ),
     body1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
-    )
-        /* Other default text styles to override
-    button = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.W500,
+        fontFamily = Lato,
         fontSize = 14.sp
     ),
+    button = TextStyle(
+        fontFamily = Lato,
+        fontWeight = FontWeight.Bold,
+        fontSize = 14.sp,
+        letterSpacing = 1.15.sp,
+        fontFeatureSettings = "smcp"
+    ),
     caption = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 12.sp
+        fontFamily = KulimPark,
+        fontSize = 12.sp,
+        letterSpacing = 1.15.sp,
+        fontFeatureSettings = "smcp"
     )
-    */
 )
