@@ -12,8 +12,8 @@
     <string name="app_name">My Soothe</string>
     <!-- Welcome -->
     <string name="logo">My Soothe</string>
-    <string name="singup">Sign Up</string>
-    <string name="login">Log In</string>
+    <string name="singup">SIGN UP</string>
+    <string name="login">LOG IN</string>
     <!-- Login -->
     <string name="email">Email address</string>
     <string name="password">Password</string>
@@ -21,24 +21,24 @@
     <string name="singup_u"><u>Sign Up</u></string>
     <!-- Home -->
     <string name="search">Search</string>
-    <string name="home">Home</string>
-    <string name="profile">Profile</string>
+    <string name="home">HOME</string>
+    <string name="profile">PROFILE</string>
     <string name="play">Play</string>
-    <string name="favorite_collections">Favorite Collections</string>
+    <string name="favorite_collections">FAVORITE COLLECTIONS</string>
     <string name="collections_mantra">Short mantras</string>
     <string name="collections_nature">Nature meditations</string>
     <string name="collections_stress">Stress and anxiety</string>
     <string name="collections_massage">Self-massage</string>
     <string name="collections_overwhelmed">Overwhelmed</string>
     <string name="collections_wind_down">Nightly wind down</string>
-    <string name="align_body">Align Your Body</string>
+    <string name="align_body">ALIGN YOUR BODY</string>
     <string name="body_inversions">Inversions</string>
     <string name="body_quick_yoga">Quick yoga</string>
     <string name="body_stretch">Stretching</string>
     <string name="body_tabata">Tabata</string>
     <string name="body_hiit">HIIT</string>
     <string name="body_natal_yoga">Pre-natal yoga</string>
-    <string name="align_mind">Align Your Mind</string>
+    <string name="align_mind">ALIGN YOUR MIND</string>
     <string name="mind_meditate">Meditate</string>
     <string name="mind_kids">With kids</string>
     <string name="mind_aroma">Aromatherapy</string>
